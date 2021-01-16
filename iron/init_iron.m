@@ -15,7 +15,7 @@ PB    = 1000; % Power
 t     = 5*60; % Time (5*60 seconds = 300 seconds)
 
 % Simulate oven model
-Simulation = sim('iron',t);
+Simulation = sim('iron.slx',t);
 
 % Extract the required data
 Temp = Simulation.TempStruct.signals.values;
